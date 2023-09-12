@@ -1,3 +1,16 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+  font-family: Origami;
+  src: url(/fonts/Origami.ttf);
+}
+
+.transparent-box {
+  background-color: rgba(255, 5, 67, 0.15) /* doesn't affect children */
+}
+
+.logo {
+  font-family: Origami;
+}
