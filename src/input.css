@@ -4,11 +4,11 @@
 
 @font-face {
   font-family: Origami;
-  src: url(/fonts/Origami.ttf);
+  src: url(../fonts/Origami.ttf);
 }
 
 .transparent-box {
-  background-color: rgba(255, 5, 67, 0.15) /* doesn't affect children */
+  background-color: rgba(238, 70, 70, 0.15) /* doesn't affect children */
 }
 
 .logo {
