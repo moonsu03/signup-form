@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <script src="https://cdn.tailwindcss.com"></script>
     <script src="script.js" defer></script>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sign-up Form</title>
-    <link rel="stylesheet" href="dist/output.css" />
+    <link rel="stylesheet" href="input.css" />
   </head>
   <body class="flex flex-col lg:flex-row">
     <aside class="relative">
@@ -14,15 +15,28 @@
         alt="sakura background aside"
         class="w-screen h-screen lg:w-[36rem] object-cover"
       />
-      
+
       <div
         class="transparent-box absolute top-[13rem] h-44 w-full flex justify-center items-center"
       >
-        <img src="img/logo.svg" alt="origami logo" class="w-24 sm:w-40" />
+        <img src="img/logo.svg" alt="origami logo" class="w-28 sm:w-40" />
         <div class="logo text-5xl sm:text-6xl mr-3">Origami</div>
       </div>
     </aside>
 
-    <main>hello world</main>
+    <main>
+      <div class="font-sans">
+        <div>
+          This is not a real online service! You know you need something like
+          this in your life to help you realize your deepest dreams. Sign up now
+          to get strated.
+        </div>
+        <div>You know you want to.</div>
+      </div>
+
+      <div>IKZ!</div>
+
+      <form action="post"></form>
+    </main>
   </body>
 </html>
