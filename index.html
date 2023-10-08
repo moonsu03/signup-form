@@ -1,3 +1,7 @@
+<!--
+  i don't know anything in responsive design; it was stupid to tackle this until i actually learn how to do it...
+  but as long as it doesn't look completely broken on different desktop screens it's fine
+-->
 <!DOCTYPE html>
 <html lang="en" class="w-screen h-screen">
   <head>
@@ -7,15 +11,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sign-up Form</title>
     <link rel="stylesheet" href="input.css" />
+
   </head>
   <body class="flex flex-col lg:flex-row">
-    <aside class="relative lg:w-[30vw]">
+    <aside class="relative lg:w-[31vw]">
       <div class="">
         <img
           src="img/tomoko-uji-bBWHtMOvxKY-unsplash.jpg"
           alt="sakura background aside"
           class="w-screen h-screen object-cover"
         />
+        <!-- impossible to fix the issue with zooming to 150% and picture is still not matching the height with main -->
         <div
           class="transparent-box absolute top-[13rem] h-44 w-full flex justify-center items-center"
         >
@@ -59,7 +65,7 @@
               type="text"
               id="first_name"
               name="first_name"
-              class="focus:outline-none border-solid border-[1px] pl-3 py-1 rounded focus:border-blue-700"
+              class="focus:outline-none border-solid border-[1px] border-neutral-300 pl-3 py-1 rounded focus:border-blue-700"
               required
             />
           </div>
@@ -71,7 +77,7 @@
               type="text"
               id="last_name"
               name="last_name"
-              class="focus:outline-none border-solid border-[1px] pl-3 py-1 rounded focus:border-blue-700"
+              class="focus:outline-none border-solid border-[1px] border-neutral-300 pl-3 py-1 rounded focus:border-blue-700"
               required
             />
           </div>
@@ -82,7 +88,7 @@
               type="email"
               name="email"
               id="email"
-              class="focus:outline-none border-solid border-[1px] pl-3 py-1 rounded focus:border-blue-700"
+              class="focus:outline-none border-solid border-[1px] border-neutral-300 pl-3 py-1 rounded focus:border-blue-700"
               required
             />
           </div>
@@ -94,7 +100,7 @@
               type="tel"
               name="phone_number"
               id="phone_number"
-              class="focus:outline-none border-solid border-[1px] pl-3 py-1 rounded focus:border-blue-700"
+              class="focus:outline-none border-solid border-[1px] border-neutral-300 pl-3 py-1 rounded focus:border-blue-700"
               required
             />
           </div>
@@ -106,8 +112,9 @@
               type="password"
               name="password"
               id="password"
-              class="focus:outline-none border-solid border-[1px] pl-3 py-1 rounded focus:border-blue-700"
+              class="focus:outline-none border-solid border-[1px] border-neutral-300 pl-3 py-1 rounded focus:border-blue-700"
               required
+              onkeyup="confirm()"
             />
           </div>
           <div class="flex flex-col lg:w-56 lg:mr-20 my-2">
@@ -118,8 +125,9 @@
               type="password"
               name="confirm_password"
               id="confirm_password"
-              class="focus:outline-none border-solid border-[1px] pl-3 py-1 rounded focus:border-blue-700"
+              class="focus:outline-none border-solid border-[1px] border-neutral-300 pl-3 py-1 rounded focus:border-blue-700"
               required
+              onkeyup="confirm()"
             />
           </div>
 

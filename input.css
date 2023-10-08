@@ -37,3 +37,15 @@ input:focus,
 .main-shadow {
   box-shadow: 2px 2px 2px 2px rgba(1, 1, 1, 0.1);
 }
+
+.match {
+  top: 25rem;
+}
+
+@media (min-width: 1024px) {
+  .match {
+    top: 12rem;
+  }
+}
+
+
